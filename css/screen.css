@@ -1,0 +1,485 @@
+/* -------------------------------------------------------------------------*/
+/* line 17, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* -------------------------------------------------------------------------*/
+/* Descriptive
+ * @purpose define the colors
+ * @naming_convention generalColor_tintOrShade
+ */
+/* -------------------------------------------------------------------------*/
+/* Functional
+ * @purpose where colors will be used
+ * @naming_convention contentType_purpose_specify
+ */
+/* General */
+/* Buttons & CTAs */
+/* Nav */
+/* Content Blocks */
+/* 5 - keep in code */
+/* 1 - keep in code */
+/**/
+/* 1 - create partially w/just size argument (no default value specified) */
+/* 4 - give size argument default value */
+/* 6 - add direction argument, interpolate just the absolute right or left */
+/* 10 - add @if */
+/* 11 - add and test @debug */
+/* 12 - add and test @warn */
+/**/
+/* 7 - write this out together, have them add and remove icons to experiment */
+/**/
+/* 9 - build together */
+/**/
+/* line 1, ../sass/themes/_default.scss */
+.default {
+  /* 3 - can keep this in code, just explain when get to this step */
+  /**/
+}
+/* line 3, ../sass/themes/_default.scss */
+.default .kitten-mug img, .kitten-mug .default img {
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.6);
+}
+/* line 5, ../sass/themes/_default.scss */
+.default .kitten-mug img:hover, .kitten-mug .default img:hover {
+  transition: box-shadow 0.2s ease;
+  box-shadow: none;
+}
+
+/* line 1, ../sass/themes/_tmo.scss */
+.tmo {
+  /* 3 - can keep this in code, just explain when get to this step */
+  /**/
+}
+/* line 3, ../sass/themes/_tmo.scss */
+.tmo .kitten-mug img, .kitten-mug .tmo img {
+  box-shadow: none;
+  border: 2px solid #e20074;
+}
+
+/* line 1, ../sass/themes/_modern.scss */
+.modern {
+  /* 3 - can keep this in code, just explain when get to this step */
+  /**/
+}
+/* line 3, ../sass/themes/_modern.scss */
+.modern .kitten-mug img, .kitten-mug .modern img {
+  box-shadow: inset 0px 0px 10px #000;
+  border: 1px solid #fff;
+}
+
+/* -------------------------------------------------------------------------*/
+/* line 15, ../sass/screen.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 20, ../sass/screen.scss */
+body, html {
+  min-width: 300px;
+  font-size: 1em;
+  line-height: 1.3em;
+  font-family: arial, sans-serif;
+}
+
+/* line 26, ../sass/screen.scss */
+img, embed, video, object, iframe {
+  max-width: 100%;
+}
+
+/* line 29, ../sass/screen.scss */
+p {
+  margin: 0 0 0.5em 0;
+  font-size: 0.9em;
+}
+
+/* line 33, ../sass/screen.scss */
+> li {
+  font-size: 0.9em;
+}
+
+/* line 36, ../sass/screen.scss */
+a {
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+
+/* line 40, ../sass/screen.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: helvetica, arial, sans-serif;
+}
+
+/* line 43, ../sass/screen.scss */
+h1 {
+  font-size: 3em;
+  line-height: 1.1em;
+}
+
+/* line 47, ../sass/screen.scss */
+h2 {
+  font-size: 1.25em;
+  line-height: 1.1em;
+  margin: 0 0 0.25em 0;
+}
+
+/* line 52, ../sass/screen.scss */
+select {
+  border: 1px solid #4d8da9;
+  color: #4d8da9;
+}
+
+/* -------------------------------------------------------------------------*/
+/* line 60, ../sass/screen.scss */
+body {
+  padding: 2em;
+}
+
+/* line 63, ../sass/screen.scss */
+header {
+  clear: both;
+  padding: 0 0 2em 0;
+}
+/* line 13, ../sass/_tools.scss */
+header:after {
+  content: " ";
+  display: table;
+  clear: both;
+  height: 0;
+}
+/* line 66, ../sass/screen.scss */
+header h1 {
+  text-align: center;
+}
+/* line 69, ../sass/screen.scss */
+header nav {
+  padding: 1em 0 0 0;
+}
+/* line 73, ../sass/_tools.scss */
+header nav .level-6 {
+  background-color: #74a8bf;
+}
+/* line 73, ../sass/_tools.scss */
+header nav .level-5 {
+  background-color: #7eafc4;
+}
+/* line 73, ../sass/_tools.scss */
+header nav .level-4 {
+  background-color: #89b5c9;
+}
+/* line 73, ../sass/_tools.scss */
+header nav .level-3 {
+  background-color: #93bcce;
+}
+/* line 73, ../sass/_tools.scss */
+header nav .level-2 {
+  background-color: #9ec3d2;
+}
+/* line 73, ../sass/_tools.scss */
+header nav .level-1 {
+  background-color: #a8c9d7;
+}
+/* line 73, ../sass/screen.scss */
+header li {
+  padding: 0 0.5em;
+}
+/* line 75, ../sass/screen.scss */
+header li a {
+  display: inline-block;
+  padding: 0.5em 0;
+  color: black;
+}
+/* line 79, ../sass/screen.scss */
+header li a:hover, header li a:focus {
+  color: #e6e6e6;
+}
+/* line 84, ../sass/screen.scss */
+header select {
+  margin: 1em auto;
+  font-size: 0.9375em;
+  display: block;
+}
+
+/* line 90, ../sass/screen.scss */
+#featured-kitten {
+  margin: 0 auto 2em auto;
+}
+/* line 92, ../sass/screen.scss */
+#featured-kitten div {
+  padding-top: 1em;
+}
+/* line 95, ../sass/screen.scss */
+#featured-kitten a {
+  position: relative;
+  padding-right: 0.625em;
+  color: #4d8da9;
+  font-weight: bold;
+}
+/* line 34, ../sass/_tools.scss */
+#featured-kitten a:after {
+  font-size: 0.7em;
+  position: absolute;
+  right: 0;
+  /* 6 */
+  content: ">";
+  /* @else if $direction == "up" {
+	@warn "Used up";
+} */
+}
+/* line 47, ../sass/_tools.scss */
+#featured-kitten a:hover, #featured-kitten a:focus {
+  color: #6da4bc;
+}
+
+/* line 100, ../sass/screen.scss */
+.kitten-mug {
+  padding-bottom: 2em;
+}
+/* line 105, ../sass/screen.scss */
+.kitten-mug a {
+  display: block;
+  text-align: right;
+  position: relative;
+  padding-right: 0.625em;
+  color: #4d8da9;
+}
+/* line 34, ../sass/_tools.scss */
+.kitten-mug a:after {
+  font-size: 0.7em;
+  position: absolute;
+  right: 0;
+  /* 6 */
+  content: ">";
+  /* @else if $direction == "up" {
+	@warn "Used up";
+} */
+}
+/* line 47, ../sass/_tools.scss */
+.kitten-mug a:hover, .kitten-mug a:focus {
+  color: #6da4bc;
+}
+
+/* 2 - build this one together, have them modify this however they want */
+/* line 113, ../sass/screen.scss */
+.sched-for-term, .new {
+  position: relative;
+}
+/* line 115, ../sass/screen.scss */
+.sched-for-term:after, .new:after {
+  content: "help me!";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #6da4bc;
+  padding: 5px;
+}
+
+/* line 126, ../sass/screen.scss */
+.new:after {
+  content: "new";
+  background-color: white;
+}
+
+/**/
+/* line 133, ../sass/screen.scss */
+footer {
+  text-align: center;
+}
+/* line 135, ../sass/screen.scss */
+footer small {
+  font-size: 0.75em;
+}
+/* line 138, ../sass/screen.scss */
+footer ul {
+  margin-top: 1em;
+}
+
+/* line 58, ../sass/_tools.scss */
+.blue-cat {
+  height: 50px;
+  width: 50px;
+  background-image: url("../img/blue-cat.gif");
+  text-indent: -999999px;
+  display: inline-block;
+  margin: 5px;
+}
+
+/* line 58, ../sass/_tools.scss */
+.red-cat {
+  height: 50px;
+  width: 50px;
+  background-image: url("../img/red-cat.gif");
+  text-indent: -999999px;
+  display: inline-block;
+  margin: 5px;
+}
+
+/* line 58, ../sass/_tools.scss */
+.yellow-cat {
+  height: 50px;
+  width: 50px;
+  background-image: url("../img/yellow-cat.gif");
+  text-indent: -999999px;
+  display: inline-block;
+  margin: 5px;
+}
+
+/* line 58, ../sass/_tools.scss */
+.orange-cat {
+  height: 50px;
+  width: 50px;
+  background-image: url("../img/orange-cat.gif");
+  text-indent: -999999px;
+  display: inline-block;
+  margin: 5px;
+}
+
+/* line 58, ../sass/_tools.scss */
+.purple-cat {
+  height: 50px;
+  width: 50px;
+  background-image: url("../img/purple-cat.gif");
+  text-indent: -999999px;
+  display: inline-block;
+  margin: 5px;
+}
+
+/* line 58, ../sass/_tools.scss */
+.black-cat {
+  height: 50px;
+  width: 50px;
+  background-image: url("../img/black-cat.gif");
+  text-indent: -999999px;
+  display: inline-block;
+  margin: 5px;
+}
+
+@media screen and (min-width: 650px) {
+  /* line 145, ../sass/screen.scss */
+  #main-content {
+    clear: both;
+  }
+  /* line 13, ../sass/_tools.scss */
+  #main-content:after {
+    content: " ";
+    display: table;
+    clear: both;
+    height: 0;
+  }
+
+  /* line 148, ../sass/screen.scss */
+  .kitten-mug {
+    width: 50%;
+    float: left;
+    padding: 0 1em 2em 1em;
+  }
+
+  /* line 153, ../sass/screen.scss */
+  .kitten-mug:nth-of-type(odd) {
+    padding-left: 0;
+  }
+
+  /* line 156, ../sass/screen.scss */
+  .kitten-mug:nth-of-type(even) {
+    padding-right: 0;
+  }
+
+  /* line 160, ../sass/screen.scss */
+  .sched-for-term:nth-of-type(odd):after, .new:nth-of-type(odd):after, .new:nth-of-type(odd):after {
+    right: 1em;
+  }
+}
+@media screen and (min-width: 800px) {
+  /* line 167, ../sass/screen.scss */
+  body {
+    max-width: 75em;
+    margin: 0 auto;
+  }
+
+  /* line 171, ../sass/screen.scss */
+  #featured-kitten {
+    clear: both;
+    padding: 0;
+  }
+  /* line 13, ../sass/_tools.scss */
+  #featured-kitten:after {
+    content: " ";
+    display: table;
+    clear: both;
+    height: 0;
+  }
+  /* line 174, ../sass/screen.scss */
+  #featured-kitten img {
+    float: left;
+    width: 50%;
+    padding-right: 1em;
+  }
+  /* line 179, ../sass/screen.scss */
+  #featured-kitten div {
+    float: left;
+    width: 50%;
+    padding: 0 0 1em 1em;
+  }
+}

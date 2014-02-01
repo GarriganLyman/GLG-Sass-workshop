@@ -1,0 +1,185 @@
+/* -------------------------------------------------------------------------*/
+// Imports
+
+@import "compass/reset";
+//@import "grid_susy";
+//@import "grid";
+@import "vars";
+@import "tools";
+@import "typography";
+@import "themes/themes";
+
+/* -------------------------------------------------------------------------*/
+// General
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body, html {
+	min-width: 300px;
+	font-size: 1em; //base font-size
+	line-height: 1.3em; //base line-height
+	@include regularFont;
+}
+img, embed, video, object, iframe {
+	max-width: 100%;
+}
+p {
+	margin:0 0 px-to-em(8px) 0;
+	font-size: 0.9em;
+}
+> li {//to prevent decrease when nested
+	font-size: 0.9em;
+}
+a {
+	transition: color 0.2s ease;
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	@include boldFont;
+}
+h1 {
+	font-size: px-to-em(48px);
+	line-height: 1.1em;
+}
+h2 {
+	font-size: px-to-em(20px);
+	line-height: 1.1em;
+	margin: 0 0 px-to-em(4px) 0;
+}
+select {//applies to all selects
+	border: 1px solid $select_borderColor;
+	color: $select_color;
+}
+
+/* -------------------------------------------------------------------------*/
+// Layout
+
+body {
+	padding: 2em;
+}
+header {
+	@include clearfix;
+	padding: 0 0 2em 0;
+	h1 {
+		text-align: center;
+	}
+	nav {
+		padding: 1em 0 0 0;
+		@include navDepth(6);
+	}
+	li {
+		padding: 0 0.5em;
+		a {
+			display: inline-block;
+			padding: 0.5em 0;
+			color: $navLinks_color;
+			&:hover, &:focus {
+				color: $navLinks_color_hover;
+			}
+		}
+	}
+	select {//applies only to the header select
+		margin: 1em auto;
+		font-size: px-to-em(15px);
+		display: block;
+	}
+}
+#featured-kitten {
+	margin: 0 auto 2em auto;
+	div {
+		padding-top: 1em;
+	}
+	a {
+		@include cta_arrow(right, 0.7em);
+		font-weight: bold;
+	}
+}
+.kitten-mug {
+	padding-bottom: 2em;
+	img {
+		@extend %img_border;
+	}
+	a {
+		display: block;
+		text-align: right;
+		@include cta_arrow(right, 0.7em);
+	}
+}
+
+/* 2 - build this one together, have them modify this however they want */
+.sched-for-term {
+	position: relative;
+	&:after {
+		content: "help me!";
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: $helpFlag_bkgdColor;
+		padding: 5px;
+	}
+}
+.new {
+	@extend .sched-for-term;
+	&:after {
+		content: "new";
+		background-color: $newFlag_bkgdColor;
+	}
+}
+/**/
+
+footer {
+	text-align: center;
+	small {
+		font-size: px-to-em(12px);
+	}
+	ul {
+		margin-top: 1em;
+	}
+}
+@include footer_icons;
+
+@media screen and (min-width: 650px) {
+	#main-content {
+		@include clearfix;
+	}
+	.kitten-mug {
+		width: 50%;
+		float: left;
+		padding: 0 1em 2em 1em;
+	}
+	.kitten-mug:nth-of-type(odd){
+		padding-left: 0;
+	}
+	.kitten-mug:nth-of-type(even){
+		padding-right: 0;
+	}
+	.sched-for-term:nth-of-type(odd), .new:nth-of-type(odd) {
+		&:after {
+			right: 1em;
+		}
+	}
+}
+
+@media screen and (min-width: 800px) {
+	body {
+		max-width: 75em;
+		margin: 0 auto;
+	}
+	#featured-kitten {
+		@include clearfix;
+		padding: 0;
+		img {
+			float: left;
+			width: 50%;
+			padding-right: 1em;
+		}
+		div {
+			float: left;
+			width: 50%;
+			padding: 0 0 1em 1em;
+		}
+	}
+}

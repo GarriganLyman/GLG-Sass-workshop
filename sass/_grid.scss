@@ -1,0 +1,14 @@
+//@reference http://12devs.co.uk/articles/handy-advanced-sass/
+
+/* -------------------------------------------------------------------------*/
+// Responsive Grid Example
+
+/* 8 - keep in code */
+$columns: 2;
+
+@for $i from 1 through $columns {
+	.cols-#{$i}{
+		width: ((100/$columns) * $i) * 1%;
+	}
+}
+/**/
